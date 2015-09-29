@@ -100,7 +100,7 @@ $(function() {
     var scores = document.getElementsByClassName('userscore');
     var sum = 0;
     for(var i = 0; i < scores.length; i ++) {
-      sum += isNaN(scores[i].innerHTML) ? 0 : parseInt(scores[i].innerHTML);
+      sum += isNaN(scores[i].innerHTML) ? 0 : parseFloat(scores[i].innerHTML);
     }
     document.getElementById('userTotalScore').innerHTML = sum;
 </script>
