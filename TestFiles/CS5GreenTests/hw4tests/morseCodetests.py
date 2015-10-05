@@ -31,15 +31,15 @@ morsecode =  {'a': '.-' ,
 
 class MorseTest(unittest.TestCase):
   def testMorse1(self):
-    self.assertEqual(hw.morse('a boy', morsecode), '.-   -... --- -.-- ')
+    self.assertEqual(hw.morse('a boy', morsecode), '.-   -... --- -.--')
   def testMorse2(self):
-    self.assertEqual(hw.morse('a man a plan a canal panama', morsecode), '.-   -- .- -.   .-   .--. .-.. .- -.   .-   -.-. .- -. .- .-..   .--. .- -. .- -- .- ')
+    self.assertEqual(hw.morse('a man a plan a canal panama', morsecode), '.-   -- .- -.   .-   .--. .-.. .- -.   .-   -.-. .- -. .- .-..   .--. .- -. .- -- .-')
   def testMorse3(self):
-    self.assertEqual(hw.morse('i love ladas', morsecode), '..   .-.. --- ...- .   .-.. .- -.. .- ... ')
+    self.assertEqual(hw.morse('i love ladas', morsecode), '..   .-.. --- ...- .   .-.. .- -.. .- ...')
   def testMorse4(self):
-    self.assertEqual(hw.morse('zyzyzzus', morsecode), '--.. -.-- --.. -.-- --.. --.. ..- ... ')
+    self.assertEqual(hw.morse('zyzyzzus', morsecode), '--.. -.-- --.. -.-- --.. --.. ..- ...')
   def testMorse5(self):
-    self.assertEqual(hw.morse('hmc', morsecode), '.... -- -.-. ')
+    self.assertEqual(hw.morse('hmc', morsecode), '.... -- -.-.')
 
 
 if __name__ == '__main__':
