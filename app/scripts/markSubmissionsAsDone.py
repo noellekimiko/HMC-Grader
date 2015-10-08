@@ -37,6 +37,9 @@ if __name__ == "__main__":
       continue
 
     # Modify the latest submission
-    sub.status = SUBMISSION_GRADED
-    sub.save()
+    if sub.status == SUBMISSION_GRADING:
+      continue
+    else: 
+      sub.status = SUBMISSION_GRADED
+      sub.save()
     
