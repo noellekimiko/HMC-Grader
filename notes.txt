@@ -1,0 +1,2 @@
+vim ./app/scripts/assignPoints_fall15.py
+./graderpython/bin/python ./app/scripts/assignPoints_fall15.py
